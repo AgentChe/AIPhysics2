@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: firebase plist
 final class GlobalDefinitions {
     static let domain = "https://science.camplain-apps.com"
     static let apiKey = "zMvSnNSvO7NMJbdviV"

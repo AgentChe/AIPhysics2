@@ -41,6 +41,18 @@ final class AssistantMainViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+         
+         navigationController?.setNavigationBarHidden(true, animated: false)
+     }
+     
+     override func viewWillDisappear(_ animated: Bool) {
+         super.viewWillDisappear(animated)
+         
+         navigationController?.setNavigationBarHidden(false, animated: false)
+     }
 }
 
 // MARK: Public
@@ -60,15 +72,13 @@ private extension AssistantMainViewController {
             let vc = HistoryViewController.make()
             navigationController?.pushViewController(vc, animated: true)
         case .recentItem(let item):
-            guard let nc = navigationController else { return }
-            
-            AssistantAssembly().recent(item: item, from: nc)
+            let vc = AssistantResultViewController.make(recentItem: item)
+            navigationController?.pushViewController(vc, animated: true)
         case .recognizeImage:
             AssistantAssembly().recognize(from: self)
         case .manual(let text):
-            guard let nc = navigationController else { return }
-            
-            AssistantAssembly().manualAnalyze(data: text, from: nc)
+            let vc = AssistantResultViewController.make(manual: text)
+            navigationController?.pushViewController(vc, animated: true)
         case .paygate:
             let vc = PaygateViewController.make()
             present(vc, animated: true)

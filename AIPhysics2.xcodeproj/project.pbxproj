@@ -129,7 +129,6 @@
 		DE2589A42D8C2BA2000AD866 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2589102D8C2BA2000AD866 /* Page.swift */; };
 		DE2589A52D8C2BA2000AD866 /* TapAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588692D8C2BA2000AD866 /* TapAreaButton.swift */; };
 		DE2589A62D8C2BA2000AD866 /* ARTHelpfulCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588A22D8C2BA2000AD866 /* ARTHelpfulCell.swift */; };
-		DE2589A72D8C2BA2000AD866 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25886A2D8C2BA2000AD866 /* WebController.swift */; };
 		DE2589A82D8C2BA2000AD866 /* PaygateActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588F72D8C2BA2000AD866 /* PaygateActionsView.swift */; };
 		DE2589A92D8C2BA2000AD866 /* HistoryTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588C22D8C2BA2000AD866 /* HistoryTableElement.swift */; };
 		DE2589AA2D8C2BA2000AD866 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588762D8C2BA2000AD866 /* DefaultRequestWrapper.swift */; };
@@ -181,7 +180,6 @@
 		DE2588672D8C2BA2000AD866 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		DE2588682D8C2BA2000AD866 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		DE2588692D8C2BA2000AD866 /* TapAreaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAreaButton.swift; sourceTree = "<group>"; };
-		DE25886A2D8C2BA2000AD866 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		DE25886C2D8C2BA2000AD866 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DE25886D2D8C2BA2000AD866 /* ObservableAndSingle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableAndSingle+Extension.swift"; sourceTree = "<group>"; };
 		DE25886E2D8C2BA2000AD866 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -428,7 +426,6 @@
 				DE2588672D8C2BA2000AD866 /* PaddingLabel.swift */,
 				DE2588682D8C2BA2000AD866 /* PaddingTextField.swift */,
 				DE2588692D8C2BA2000AD866 /* TapAreaButton.swift */,
-				DE25886A2D8C2BA2000AD866 /* WebController.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -619,9 +616,9 @@
 			isa = PBXGroup;
 			children = (
 				DE2588AA2D8C2BA2000AD866 /* Views */,
-				DE2588AB2D8C2BA2000AD866 /* AssistantResultView.swift */,
 				DE2588AC2D8C2BA2000AD866 /* AssistantResultViewController.swift */,
 				DE2588AD2D8C2BA2000AD866 /* AssistantResultViewModel.swift */,
+				DE2588AB2D8C2BA2000AD866 /* AssistantResultView.swift */,
 			);
 			path = AssistantResult;
 			sourceTree = "<group>";
@@ -677,9 +674,9 @@
 			isa = PBXGroup;
 			children = (
 				DE2588BA2D8C2BA2000AD866 /* Views */,
-				DE2588BB2D8C2BA2000AD866 /* AccountView.swift */,
 				DE2588BC2D8C2BA2000AD866 /* AccountViewController.swift */,
 				DE2588BD2D8C2BA2000AD866 /* AccountViewModel.swift */,
+				DE2588BB2D8C2BA2000AD866 /* AccountView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -716,9 +713,9 @@
 			isa = PBXGroup;
 			children = (
 				DE2588C62D8C2BA2000AD866 /* Views */,
-				DE2588C72D8C2BA2000AD866 /* HistoryView.swift */,
 				DE2588C82D8C2BA2000AD866 /* HistoryViewController.swift */,
 				DE2588C92D8C2BA2000AD866 /* HistoryViewModel.swift */,
+				DE2588C72D8C2BA2000AD866 /* HistoryView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -1364,7 +1361,6 @@
 				DE2589A42D8C2BA2000AD866 /* Page.swift in Sources */,
 				DE2589A52D8C2BA2000AD866 /* TapAreaButton.swift in Sources */,
 				DE2589A62D8C2BA2000AD866 /* ARTHelpfulCell.swift in Sources */,
-				DE2589A72D8C2BA2000AD866 /* WebController.swift in Sources */,
 				DE2589A82D8C2BA2000AD866 /* PaygateActionsView.swift in Sources */,
 				DE2589A92D8C2BA2000AD866 /* HistoryTableElement.swift in Sources */,
 				DE2589AA2D8C2BA2000AD866 /* DefaultRequestWrapper.swift in Sources */,
@@ -1415,9 +1411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2GY8CB289H;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIPhysics2/Info.plist;
@@ -1433,7 +1430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics;
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1452,9 +1449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2GY8CB289H;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIPhysics2/Info.plist;
@@ -1470,7 +1468,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics;
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

@@ -41,6 +41,18 @@ final class AccountViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 }
 
 // MARK: Public
@@ -60,8 +72,7 @@ private extension AccountViewController {
             let vc = HistoryViewController.make()
             navigationController?.pushViewController(vc, animated: true)
         case .url(let url):
-            let vc = WebController.make(url: url)
-            present(vc, animated: true)
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 }

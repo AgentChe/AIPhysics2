@@ -17,29 +17,26 @@ final class AssistantResultViewController: UIViewController {
     
     private lazy var disposeBag = DisposeBag()
     
-    private let didTapClose: () -> Void
-    
     private lazy var didRefreshTrigger = PublishRelay<AssistantResultViewModel.AssistantResult>()
     private lazy var didLikeTrigger = PublishRelay<AssistantResultViewModel.AssistantResult>()
     private lazy var didDislikeTrigger = PublishRelay<AssistantResultViewModel.AssistantResult>()
     
-    private init(recentItem: HistoryAssistantResult, didTapClose: @escaping () -> Void) {
+    private var navigationClosedButtonTapped: (() -> Void)?
+    
+    private init(recentItem: HistoryAssistantResult) {
         self.viewModel = AssistantResultViewModel(recentItem: recentItem)
-        self.didTapClose = didTapClose
         
         super.init(nibName: nil, bundle: nil)
     }
     
-    private init(recognized: AssistantRecognizerController.Result, didTapClose: @escaping () -> Void) {
+    private init(recognized: AssistantRecognizerController.Result) {
         self.viewModel = AssistantResultViewModel(recognized: recognized)
-        self.didTapClose = didTapClose
         
         super.init(nibName: nil, bundle: nil)
     }
     
-    private init(manual: String, didTapClose: @escaping () -> Void) {
+    private init(manual: String) {
         self.viewModel = AssistantResultViewModel(manual: manual)
-        self.didTapClose = didTapClose
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -56,7 +53,6 @@ final class AssistantResultViewController: UIViewController {
         super.viewDidLoad()
         
         let output = viewModel.configure(input: AssistantResultViewModel.Input(
-            didTapClose: mainView.closeButton.rx.tap.asSignal(),
             didTapRefresh: didRefreshTrigger.asSignal(),
             didTapCopy: mainView.tableView.didTapCopy,
             didTapLike: didLikeTrigger.asSignal(),
@@ -89,12 +85,6 @@ final class AssistantResultViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        output.route
-            .drive(Binder(self) { base, route in
-                base.route(route)
-            })
-            .disposed(by: disposeBag)
-        
         output.action
             .drive(Binder(self) { base, action in
                 base.action(action)
@@ -111,34 +101,44 @@ final class AssistantResultViewController: UIViewController {
 
 // MARK: Public
 extension AssistantResultViewController {
-    static func make(recognized: AssistantRecognizerController.Result, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
-        let vc = AssistantResultViewController(recognized: recognized, didTapClose: didTapClose)
+    static func make(recognized: AssistantRecognizerController.Result) -> AssistantResultViewController {
+        let vc = AssistantResultViewController(recognized: recognized)
         vc.navigationItem.backButtonTitle = " "
         return vc
     }
     
-    static func make(recentItem: HistoryAssistantResult, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
-        let vc = AssistantResultViewController(recentItem: recentItem, didTapClose: didTapClose)
+    static func make(recentItem: HistoryAssistantResult) -> AssistantResultViewController {
+        let vc = AssistantResultViewController(recentItem: recentItem)
         vc.navigationItem.backButtonTitle = " "
         return vc
     }
     
-    static func make(manual: String, didTapClose: @escaping () -> Void) -> AssistantResultViewController {
-        let vc = AssistantResultViewController(manual: manual, didTapClose: didTapClose)
+    static func make(manual: String) -> AssistantResultViewController {
+        let vc = AssistantResultViewController(manual: manual)
         vc.navigationItem.backButtonTitle = " "
         return vc
     }
+    
+    func addCloseButtonInNavigationBar(closed: @escaping () -> Void) {
+        let closeButton = TapAreaButton()
+        closeButton.backgroundColor = UIColor.clear
+        closeButton.setImage(UIImage(named: "AssistantResult.Close"), for: .normal)
+        closeButton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
+        
+        let item = UIBarButtonItem(customView: closeButton)
+        item.customView?.translatesAutoresizingMaskIntoConstraints = false
+        
+        item.customView?.widthAnchor.constraint(equalToConstant: 44.scale).isActive = true
+        item.customView?.heightAnchor.constraint(equalToConstant: 44.scale).isActive = true
+        
+        navigationItem.leftBarButtonItem = item
+        
+        navigationClosedButtonTapped = closed
+     }
 }
 
 // MARK: Private
 private extension AssistantResultViewController {
-    func route(_ route: AssistantResultViewModel.Route) {
-        switch route {
-        case .close:
-            didTapClose()
-        }
-    }
-    
     func action(_ action: AssistantResultViewModel.Action) {
         switch action {
         case .copy(let string):
@@ -146,5 +146,10 @@ private extension AssistantResultViewController {
             
             mainView.makeToast("AssistantResult.Copied".localized, position: .top)
         }
+    }
+    
+    @objc
+    func closeButtonTapped() {
+        navigationClosedButtonTapped?()
     }
 }

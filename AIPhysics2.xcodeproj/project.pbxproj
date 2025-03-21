@@ -97,7 +97,6 @@
 		DE2589842D8C2BA2000AD866 /* AssistantResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588AB2D8C2BA2000AD866 /* AssistantResultView.swift */; };
 		DE2589852D8C2BA2000AD866 /* PurchaseValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2589272D8C2BA2000AD866 /* PurchaseValidationObserver.swift */; };
 		DE2589862D8C2BA2000AD866 /* PaygateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588FF2D8C2BA2000AD866 /* PaygateViewController.swift */; };
-		DE2589872D8C2BA2000AD866 /* PushNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25887E2D8C2BA2000AD866 /* PushNotificationsManager.swift */; };
 		DE2589882D8C2BA2000AD866 /* ARTAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588A12D8C2BA2000AD866 /* ARTAnswerCell.swift */; };
 		DE2589892D8C2BA2000AD866 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25886F2D8C2BA2000AD866 /* UIApplication+Extension.swift */; };
 		DE25898A2D8C2BA2000AD866 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588792D8C2BA2000AD866 /* RestAPITransport.swift */; };
@@ -123,7 +122,6 @@
 		DE25899E2D8C2BA2000AD866 /* AccountActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588B12D8C2BA2000AD866 /* AccountActionView.swift */; };
 		DE25899F2D8C2BA2000AD866 /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588FE2D8C2BA2000AD866 /* PaygateView.swift */; };
 		DE2589A02D8C2BA2000AD866 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588882D8C2BA2000AD866 /* ScreenSize.swift */; };
-		DE2589A12D8C2BA2000AD866 /* PushNotificationsAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25887B2D8C2BA2000AD866 /* PushNotificationsAuthorizationStatus.swift */; };
 		DE2589A22D8C2BA2000AD866 /* AssistantMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25889D2D8C2BA2000AD866 /* AssistantMainViewModel.swift */; };
 		DE2589A32D8C2BA2000AD866 /* AssistantAnalyzeImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25890D2D8C2BA2000AD866 /* AssistantAnalyzeImageResponse.swift */; };
 		DE2589A42D8C2BA2000AD866 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2589102D8C2BA2000AD866 /* Page.swift */; };
@@ -134,7 +132,6 @@
 		DE2589AA2D8C2BA2000AD866 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588762D8C2BA2000AD866 /* DefaultRequestWrapper.swift */; };
 		DE2589AB2D8C2BA2000AD866 /* AssistantImageResizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588E22D8C2BA2000AD866 /* AssistantImageResizeViewController.swift */; };
 		DE2589AC2D8C2BA2000AD866 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588D42D8C2BA2000AD866 /* CameraService.swift */; };
-		DE2589AD2D8C2BA2000AD866 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25887C2D8C2BA2000AD866 /* PushNotificationsModel.swift */; };
 		DE2589AE2D8C2BA2000AD866 /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588612D8C2BA2000AD866 /* RxActivityIndicator.swift */; };
 		DE2589AF2D8C2BA2000AD866 /* ProfileBindingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25891A2D8C2BA2000AD866 /* ProfileBindingRequest.swift */; };
 		DE2589B02D8C2BA2000AD866 /* NumberLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588852D8C2BA2000AD866 /* NumberLaunches.swift */; };
@@ -146,7 +143,6 @@
 		DE2589B62D8C2BA2000AD866 /* Scalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588872D8C2BA2000AD866 /* Scalable.swift */; };
 		DE2589B72D8C2BA2000AD866 /* AssistantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25889B2D8C2BA2000AD866 /* AssistantMainView.swift */; };
 		DE2589B82D8C2BA2000AD866 /* TabItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2588CB2D8C2BA2000AD866 /* TabItemButton.swift */; };
-		DE2589B92D8C2BA2000AD866 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25885E2D8C2BA2000AD866 /* FirebaseManager.swift */; };
 		DE2589BA2D8C2BA2000AD866 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25891F2D8C2BA2000AD866 /* IAPError.swift */; };
 		DE2589C92D8C2BAF000AD866 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE2589C72D8C2BAF000AD866 /* Localizable.strings */; };
 		DE2589CA2D8C2BAF000AD866 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE2589C22D8C2BAF000AD866 /* Inter-SemiBold.ttf */; };
@@ -171,7 +167,6 @@
 		DE2588542D8C2B0F000AD866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2588552D8C2B0F000AD866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE25885D2D8C2BA2000AD866 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DE25885E2D8C2BA2000AD866 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE2588602D8C2BA2000AD866 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE2588612D8C2BA2000AD866 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
 		DE2588632D8C2BA2000AD866 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -192,9 +187,6 @@
 		DE2588762D8C2BA2000AD866 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
 		DE2588782D8C2BA2000AD866 /* APIRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestBody.swift; sourceTree = "<group>"; };
 		DE2588792D8C2BA2000AD866 /* RestAPITransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPITransport.swift; sourceTree = "<group>"; };
-		DE25887B2D8C2BA2000AD866 /* PushNotificationsAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsAuthorizationStatus.swift; sourceTree = "<group>"; };
-		DE25887C2D8C2BA2000AD866 /* PushNotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
-		DE25887E2D8C2BA2000AD866 /* PushNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsManager.swift; sourceTree = "<group>"; };
 		DE2588802D8C2BA2000AD866 /* ContentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentError.swift; sourceTree = "<group>"; };
 		DE2588812D8C2BA2000AD866 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DE2588822D8C2BA2000AD866 /* SignError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignError.swift; sourceTree = "<group>"; };
@@ -395,7 +387,6 @@
 			isa = PBXGroup;
 			children = (
 				DE25885D2D8C2BA2000AD866 /* AmplitudeManager.swift */,
-				DE25885E2D8C2BA2000AD866 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -464,24 +455,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		DE25887D2D8C2BA2000AD866 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE25887B2D8C2BA2000AD866 /* PushNotificationsAuthorizationStatus.swift */,
-				DE25887C2D8C2BA2000AD866 /* PushNotificationsModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DE25887F2D8C2BA2000AD866 /* PushNotifications */ = {
-			isa = PBXGroup;
-			children = (
-				DE25887D2D8C2BA2000AD866 /* Models */,
-				DE25887E2D8C2BA2000AD866 /* PushNotificationsManager.swift */,
-			);
-			path = PushNotifications;
-			sourceTree = "<group>";
-		};
 		DE2588832D8C2BA2000AD866 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,7 +489,6 @@
 				DE25886B2D8C2BA2000AD866 /* CustomViews */,
 				DE2588752D8C2BA2000AD866 /* Extension */,
 				DE25887A2D8C2BA2000AD866 /* Network */,
-				DE25887F2D8C2BA2000AD866 /* PushNotifications */,
 				DE25888C2D8C2BA2000AD866 /* Utils */,
 				DE25888D2D8C2BA2000AD866 /* AppDelegate.swift */,
 				DE25888E2D8C2BA2000AD866 /* Appearance.swift */,
@@ -1329,7 +1301,6 @@
 				DE2589842D8C2BA2000AD866 /* AssistantResultView.swift in Sources */,
 				DE2589852D8C2BA2000AD866 /* PurchaseValidationObserver.swift in Sources */,
 				DE2589862D8C2BA2000AD866 /* PaygateViewController.swift in Sources */,
-				DE2589872D8C2BA2000AD866 /* PushNotificationsManager.swift in Sources */,
 				DE2589882D8C2BA2000AD866 /* ARTAnswerCell.swift in Sources */,
 				DE2589892D8C2BA2000AD866 /* UIApplication+Extension.swift in Sources */,
 				DE25898A2D8C2BA2000AD866 /* RestAPITransport.swift in Sources */,
@@ -1355,7 +1326,6 @@
 				DE25899E2D8C2BA2000AD866 /* AccountActionView.swift in Sources */,
 				DE25899F2D8C2BA2000AD866 /* PaygateView.swift in Sources */,
 				DE2589A02D8C2BA2000AD866 /* ScreenSize.swift in Sources */,
-				DE2589A12D8C2BA2000AD866 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE2589A22D8C2BA2000AD866 /* AssistantMainViewModel.swift in Sources */,
 				DE2589A32D8C2BA2000AD866 /* AssistantAnalyzeImageResponse.swift in Sources */,
 				DE2589A42D8C2BA2000AD866 /* Page.swift in Sources */,
@@ -1366,7 +1336,6 @@
 				DE2589AA2D8C2BA2000AD866 /* DefaultRequestWrapper.swift in Sources */,
 				DE2589AB2D8C2BA2000AD866 /* AssistantImageResizeViewController.swift in Sources */,
 				DE2589AC2D8C2BA2000AD866 /* CameraService.swift in Sources */,
-				DE2589AD2D8C2BA2000AD866 /* PushNotificationsModel.swift in Sources */,
 				DE2589AE2D8C2BA2000AD866 /* RxActivityIndicator.swift in Sources */,
 				DE2589AF2D8C2BA2000AD866 /* ProfileBindingRequest.swift in Sources */,
 				DE2589B02D8C2BA2000AD866 /* NumberLaunches.swift in Sources */,
@@ -1378,7 +1347,6 @@
 				DE2589B62D8C2BA2000AD866 /* Scalable.swift in Sources */,
 				DE2589B72D8C2BA2000AD866 /* AssistantMainView.swift in Sources */,
 				DE2589B82D8C2BA2000AD866 /* TabItemButton.swift in Sources */,
-				DE2589B92D8C2BA2000AD866 /* FirebaseManager.swift in Sources */,
 				DE2589BA2D8C2BA2000AD866 /* IAPError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1412,9 +1380,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2GY8CB289H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIPhysics2/Info.plist;
@@ -1430,7 +1398,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.gravity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1450,9 +1418,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2GY8CB289H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AIPhysics2/Info.plist;
@@ -1468,7 +1436,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.physics.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = app.iphone.science.gravity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

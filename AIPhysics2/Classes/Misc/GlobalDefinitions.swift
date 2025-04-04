@@ -12,7 +12,7 @@ final class GlobalDefinitions {
     static let apiKey = "zMvSnNSvO7NMJbdviV"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "yBjUwwah6jnokLgJ"
+    static let otterScaleApiKey = "WCcQj4OrVYE86tVi"
     
     static let applicationTag = "PHYSICS_SOLVER_2"
     static let amplitudeApiKey = "784ee0e6cb07cb515f3b080b4b415b27"
